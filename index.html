@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Strategy | F1 Pit Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="container text-center">
+            <h1>Apex Strategy Engine</h1>
+            <p>Interactive F1 Pit Window Visualizer</p>
+        </div>
+    </header>
+
+    <main class="container layout-grid">
+        <section class="controls panel">
+            <h2>Race Parameters</h2>
+            
+            <div class="input-group">
+                <label for="totalLaps">Total Race Laps:</label>
+                <input type="number" id="totalLaps" value="50" min="10" max="80">
+            </div>
+
+            <div class="input-group">
+                <label for="baseLapTime">Base Lap Time (seconds):</label>
+                <input type="number" id="baseLapTime" value="90" min="60" max="150">
+            </div>
+
+            <div class="input-group">
+                <label for="pitLoss">Pit Stop Time Loss (seconds):</label>
+                <input type="number" id="pitLoss" value="22" min="15" max="35">
+            </div>
+
+            <hr class="divider">
+            <h2>Strategy Plan</h2>
+
+            <div class="input-group">
+                <label for="stint1">Stint 1 Tire:</label>
+                <select id="stint1">
+                    <option value="soft">Soft (Fast, High Deg)</option>
+                    <option value="medium" selected>Medium (Balanced)</option>
+                    <option value="hard">Hard (Slow, Low Deg)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="stint2">Stint 2 Tire:</label>
+                <select id="stint2">
+                    <option value="soft">Soft (Fast, High Deg)</option>
+                    <option value="medium">Medium (Balanced)</option>
+                    <option value="hard" selected>Hard (Slow, Low Deg)</option>
+                </select>
+            </div>
+
+            <button id="calculateBtn" class="btn">Calculate Optimal Strategy</button>
+        </section>
+
+        <section class="visualization panel">
+            <div id="results" class="results-box hidden">
+                <h3>Optimal Strategy Found</h3>
+                <p id="optimumText">Pit on Lap -- | Total Race Time: --</p>
+            </div>
+            
+            <div class="chart-container">
+                <canvas id="strategyChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
