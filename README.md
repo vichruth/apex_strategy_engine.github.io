@@ -1,4 +1,39 @@
-# Apex Strategy: F1 Pit Window Visualizer
+# 🏎️ Apex Strategy Engine
+**Interactive F1 Pit Window Visualizer**
+
+A client-side web application designed to mathematically determine and visualize the fastest race strategy in motorsports. By simulating cumulative race times based on dynamic tire degradation rates, this tool helps calculate the optimal lap for a pit stop.
+
+---
+
+## 🎓 Academic Submission Details
+* **Course:** BCSE203E - Web Programming
+* **Assignment:** Digital Assignment - II
+* **Name:** Vichruth M
+* **University:** Vellore Institute of Technology (VIT)
+
+## ✨ Features
+* **Dynamic Simulation Engine:** A brute-force algorithmic calculator that processes total race laps, base lap times, and pit-lane time penalties.
+* **Tire Physics Modeling:** Pre-defined degradation rates and pace offsets for Soft, Medium, and Hard tire compounds.
+* **Real-Time Visualization:** Automatic rendering of a line chart comparing the total race time for every possible pit-stop lap.
+* **Optimal Strategy Output:** Highlights the exact lap that yields the shortest total race time.
+
+---
+
+## 🛠️ Tech Stack
+* **HTML5:** Semantic structure and accessible forms.
+* **CSS3:** Custom CSS, CSS Grid, and Flexbox (No external CSS frameworks used).
+* **JavaScript (ES6+):** Vanilla JS for all state management, algorithms, and DOM manipulation.
+* **Chart.js:** Included via CDN for high-performance canvas data visualization.
+
+---
+
+## 🚀 How to Run Locally
+
+Since this project uses entirely client-side technologies with no backend server or build steps, running it locally is incredibly simple.
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/vichruth/apex-strategy-engine.git](https://github.com/vichruth/apex-strategy-engine.git)# Apex Strategy: F1 Pit Window Visualizer
 **BCSE203E - Web Programming | Digital Assignment - II**
 
 **Name:** Vichruth M  
